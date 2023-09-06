@@ -28,7 +28,7 @@ public class Main {
             String dod = data[3];
             String number = data[4];
             String gender = data[5].strip();
-            if (!dod.contains(".")) {
+            if (!dod.contains(".") || dod.length() != 10) {
                 throw new InputError("Данный параметр был введён не верно (");
             } else if (number.length() != 11 || !isNumeric(number)) {
                 throw new InputError("Данный параметр был введён не верно (");
@@ -63,6 +63,7 @@ public class Main {
     public static boolean isNumeric(String s) {
         try {
             Double.parseDouble(s);
+            int num = Integer.parseInt(s);
             return true;
         } catch (NumberFormatException e) {
             return false;

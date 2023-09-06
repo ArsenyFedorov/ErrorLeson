@@ -1,4 +1,4 @@
-// 1) Убрал 'throws Exception' в заголовке Main - выше метода нет?
+package HW_2;// 1) Убрал 'throws Exception' в заголовке Main - выше метода нет?
 // 2) Убрал 'throws FileNotFoundException' в заголовке printSum - там нет работы с файлами.
 // 3) Переместил catch (Throwable ex) в самый низ, чтобы он не перехватывал все подряд.
 
